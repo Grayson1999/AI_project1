@@ -267,7 +267,10 @@ body {
   background-color: #EFEFEF;
   border-radius: 10px;
 }
-
+.ad-banner{
+  width: 320px;
+  margin:0 auto;
+}
 
 
 

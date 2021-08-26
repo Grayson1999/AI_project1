@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나를 좋아해주는 나라 찾기</title>
+    <title>Document</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -18,7 +18,7 @@
     <!--네비게이션 바-->
     <nav class="navbar navbar-expand-lg navbar-light nav-distance">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Grayson's project</a>
+            <a class="navbar-brand" href="#">Grayson's project</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
@@ -58,14 +58,11 @@
         </div>
     </nav>
     <!--홈페이지 UI-->
-    <div class="container background">
-    <section class="container section">
-        
-        <h1 class="title">추천 여행지 찾기</h1>
-        <h2 class="subtitle">얼굴 인공지능 분석을 통해 여행지 추천 받기</h2>
+    <section class="section">
+        <h1 class="title">제목 란</h1>
+        <h2 class="subtitle">부재목 란</h2>
     </section>
     <section class="introduce">
-        <a class="ver_selection" href="">English.ver</a>
         <div><a href="https://www.naver.com">나의 홈페이지 란</a></div>
     </section>
 
@@ -112,15 +109,27 @@
             </div>
         </div>
     </div>
-    <div calss="ad-banner">
-        <ins class="kakao_ad_area" style="display:none;" 
-            data-ad-unit    = "DAN-6uLvmLEhcKZwJdNr" 
-            data-ad-width   = "320" 
-            data-ad-height  = "50"></ins> 
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-    </div>
-</div>
 
+    <div class="container" id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://popular-in-countries.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
     <script>
