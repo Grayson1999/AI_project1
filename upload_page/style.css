@@ -155,23 +155,19 @@ body {
   text-align: center; 
 }
 .title{
-  margin-top: 4%;
-  padding-top: 5%;
-  padding-bottom: 2%;
+  margin-top: 7%;
   font-size: 210%;
 }
 .subtitle{
-  margin-top: 1%;
-  padding-top: 0.5%;
-  padding-bottom: 2%;
+  margin-top: 2.3%;
   font-size: 130%;
 }
 
 .introduce{
   text-align: right;
-  margin-right: 8%;
-  margin-top: 2.5%;
-  margin-bottom: 4%;
+  margin-right: 1.7%;
+  margin-top: 4%;
+  margin-bottom: 5%;
 
 }
 
@@ -211,7 +207,7 @@ body {
 
 @media screen and (max-width: 400px) {
   html {
-    font-size: 9.5px;
+    font-size: 8.5px;
   }
   .image-upload-wrap{
     width: 78%;
@@ -228,9 +224,6 @@ body {
   #result-image{
     width: 127px;
     padding: 7px;
-  }
-  .container{
-    size: 10%;
   }
 
   
@@ -261,17 +254,8 @@ body {
   padding: 20px;
 }
 .addthis_inline_share_toolbox_u72h{
-  margin-top: 2.5%;
+  margin-top: 1%;
 }
-.background{
-  background-color: #EFEFEF;
-  border-radius: 10px;
-}
-
-
-
-
-
 
 
 
