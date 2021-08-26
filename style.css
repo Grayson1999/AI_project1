@@ -11,7 +11,7 @@ body {
   border-radius: 10px;
   border: solid 1.5px #f6f7fa;
   padding: 3% 0;
-  
+
 }
 
 .file-upload-btn {
@@ -266,6 +266,8 @@ body {
 .background{
   background-color: #EFEFEF;
   border-radius: 10px;
+  padding-bottom: 3.5%;
+
 }
 .ad-banner{
   width: 320px;
