@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나를 좋아해주는 나라 찾기</title>
+    <title>여행지 찾기 by 71travpicer</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -75,7 +75,6 @@
 
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <div class="container file-upload">
-
         <div class="container image-upload-wrap">
             <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
 
@@ -205,6 +204,7 @@
                 });
                 resultmassage = "한국(Korea)"
                 examplemassage = "사진대로라면 한국에서 인기가 많을것 같은데요.<br>한국에서 가장 닮은 연예인은 바로!!!"
+                
             }
             else if (prediction[0].className == "japan") {
                 init_japan().then(function () {
@@ -242,6 +242,7 @@
                 examplemassage = "캐나다로 떠나봐여, 어디보자 여권이 어딨지??<br>캐나다에서 가장 닮은 연예인은 바로!!!"
 
             }
+
             $('.result-massage').html(resultmassage);
             $('.examplemassage').html(examplemassage);
             // for (let i = 0; i < maxPredictions; i++) {

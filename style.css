@@ -124,7 +124,7 @@ body {
 
 .nav-distance{
   padding-top: 0.5%;
-  padding-bottom: 0.5%;
+  padding-bottom: 4.5%;
   margin-right: 1.52%;
 
 }
@@ -211,7 +211,7 @@ body {
 
 @media screen and (max-width: 400px) {
   html {
-    font-size: 9.5px;
+    font-size: 8px;
   }
   .image-upload-wrap{
     width: 78%;
@@ -222,15 +222,19 @@ body {
     height: auto;
   }
   .file-upload-image{
-    width: 115px;
+    width: 105px;
     padding: 7px;
   }
-  #result-image{
-    width: 127px;
+  #result-image{  
+    width: 105px;
     padding: 7px;
   }
   .container{
     size: 10%;
+  }
+  .title{
+    padding-top: 10%;
+    padding-bottom: 5%;
   }
 
   
@@ -238,11 +242,11 @@ body {
 
 .introduce a{
   color: gray;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .introduce a:hover{
   color:red;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 #label-container{
@@ -273,7 +277,6 @@ body {
   width: 320px;
   margin:0 auto;
 }
-
 
 
 
