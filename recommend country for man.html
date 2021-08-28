@@ -182,12 +182,12 @@
                 resultmassage = "일본(Japan)"
                 examplemassage = "일본 비행기 티켓을 알아보러 갈까요?.<br>일본에서 가장 닮은 연예인은 바로!!!"
             }
-            else if (prediction[0].className == "china") {
-                init_china().then(function () {
-                    predict_china();
+            else if (prediction[0].className == "thailand") {
+                init_thailand().then(function () {
+                    predict_thailand();
                 });
-                resultmassage = "중국(China)"
-                examplemassage = "중국에서 잘~생겼네요.<br>중국에서 가장 닮은 연예인은 바로!!!"
+                resultmassage = "태국(Thailand)"
+                examplemassage = "태국에서 잘~생겼네요.<br>태국에서 가장 닮은 연예인은 바로!!!"
             }
             else if (prediction[0].className == "USA") {
                 init_USA().then(function () {
@@ -225,7 +225,7 @@
 
     <script type="text/javascript">
         //한국 모델 삽입
-        const URL_korea = "https://teachablemachine.withgoogle.com/models/aKN2Jnky4/";
+        const URL_korea = "https://teachablemachine.withgoogle.com/models/ZQIbYrUzv/";
         let model_korea, labelContainer_korea, maxPredictions_korea, page_value;
 
 
@@ -282,43 +282,43 @@
 
 
     <script type="text/javascript">
-        //중국 모델 삽입
-        const URL_china = "https://teachablemachine.withgoogle.com/models/SXoEWdzA7/";
-        let model_china, labelContainer_china, maxPredictions_china;
+        //태국 모델 삽입
+        const URL_thailand = "https://teachablemachine.withgoogle.com/models/ZkGlxq_W5/";
+        let model_thailand, labelContainer_thailand, maxPredictions_thailand;
 
 
         // Load the image model and setup the webcam
-        async function init_china() {
-            const modelURL_china = URL_china + "model.json";
-            const metadataURL_china = URL_china + "metadata.json";
+        async function init_thailand() {
+            const modelURL_thailand = URL_thailand + "model.json";
+            const metadataURL_thailand = URL_thailand + "metadata.json";
 
             // load the model and metadata
             // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
             // or files from your local hard drive
             // Note: the pose library adds "tmImage" object to your window (window.tmImage)
-            model_china = await tmImage.load(modelURL_china, metadataURL_china);
-            maxPredictions_china = model_china.getTotalClasses();
+            model_thailand = await tmImage.load(modelURL_thailand, metadataURL_thailand);
+            maxPredictions_thailand = model_thailand.getTotalClasses();
 
             // append elements to the DOM
-            labelContainer_china = document.getElementById("label-container");
-            for (let i = 0; i < maxPredictions_china; i++) { // and class labels
-                labelContainer_china.appendChild(document.createElement("div"));
+            labelContainer_thailand = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions_thailand; i++) { // and class labels
+                labelContainer_thailand.appendChild(document.createElement("div"));
             }
         }
 
 
         // run the webcam image through the image model
-        async function predict_china() {
+        async function predict_thailand() {
             // predict can take in an image, video or canvas html element
             var image = document.getElementById("face-image")
-            const prediction_china = await model_china.predict(image, false);
+            const prediction_thailand = await model_thailand.predict(image, false);
             $('#loading').hide();
             for (let i = 0; i < 1; i++) {
-                const classPrediction_china =
-                    prediction_china[i].className;
-                labelContainer_china.childNodes[i].innerHTML = classPrediction_china;
+                const classPrediction_thailand =
+                    prediction_thailand[i].className;
+                labelContainer_thailand.childNodes[i].innerHTML = classPrediction_thailand;
             }
-            page_value = prediction_china[0].className
+            page_value = prediction_thailand[0].className
             result_image()
             $('#result-image').show();
         }
@@ -326,13 +326,13 @@
             location.href = "https://www.google.com/search?q=" + page_value;
         }
         function result_image() {
-            document.getElementById("result-image").src = "./result_img/" + page_value + ".jpg";
+            document.getElementById("result-image").src = "./result_img_man/" + page_value + ".jpg";
         }
     </script>
 
     <script type="text/javascript">
         //일본 모델 삽입
-        const URL_japan = "https://teachablemachine.withgoogle.com/models/OdifLOlGw/";
+        const URL_japan = "https://teachablemachine.withgoogle.com/models/f9kF3cYuC/";
         let model_japan, labelContainer_japan, maxPredictions_japan;
 
 
@@ -381,8 +381,8 @@
     </script>
 
     <script type="text/javascript">
-        //마국 모델 삽입
-        const URL_USA = "https://teachablemachine.withgoogle.com/models/rtCG55vu3/";
+        //미국 모델 삽입
+        const URL_USA = "https://teachablemachine.withgoogle.com/models/S8YZyB-9T/";
         let model_USA, labelContainer_USA, maxPredictions_USA;
 
 
@@ -432,7 +432,7 @@
 
     <script type="text/javascript">
         //영국 모델 삽입
-        const URL_UK = "https://teachablemachine.withgoogle.com/models/_kCpyWZu9/";
+        const URL_UK = "https://teachablemachine.withgoogle.com/models/p7Dq0XEBs/";
         let model_UK, labelContainer_UK, maxPredictions_UK;
 
 
@@ -481,7 +481,7 @@
 
     <script type="text/javascript">
         //캐나다 모델 삽입
-        const URL_canada = "https://teachablemachine.withgoogle.com/models/j25qXQC9i/";
+        const URL_canada = "https://teachablemachine.withgoogle.com/models/iYKdiSt7H/";
         let model_canada, labelContainer_canada, maxPredictions_canada;
 
 
