@@ -11720,6 +11720,9 @@ html {
   width: 140px;
   padding: 7px;
 }
+#attachment{
+  max-width: 30px;
+}
 
 
 }
@@ -11795,6 +11798,12 @@ margin-top: 3%;
 }
 .sign_how_to_start{
   color: #e92efb;
+}
+#attachment{
+  padding-top: 1.5%;
+}
+#darg-in-text{
+  padding-top: 4.5%;
 }
 
 
