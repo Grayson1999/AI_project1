@@ -11709,6 +11709,9 @@ html {
   width: 80%;
   height: auto;
 }
+.home_bottom_banner{
+  display: none;
+}
 
 
 }
@@ -11783,9 +11786,9 @@ width: 320px;
 margin:0 auto;
 }
 
-#home_bottom_banner { display:inline-block; }
-@media(min-width: 768px) 
-{ #home_bottom_banner { width: 100%; height: 100px; } }
+
+
+
 
 
 
