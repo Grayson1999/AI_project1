@@ -48,6 +48,7 @@
             <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
 
             <div class="drag-text">
+                <img id="attachment" src="./assets/img/attachment.png">
                 <h3 id=darg-in-text>사진은 넣거나 파일은 선택해 첨부해 주세요.</h3>
 
             </div>
@@ -182,7 +183,7 @@
             }
             else if (prediction[0].className == "japan") {
                 init_japan().then(function () {
-                    
+
                     predict_japan();
                 });
                 resultmassage = "일본"
