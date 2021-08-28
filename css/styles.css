@@ -11372,7 +11372,7 @@ html {
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
-  padding: 0.8rem;
+  padding: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -11729,16 +11729,14 @@ html {
   height: auto;
 }
 .file-upload-image{
-  width: 105px;
+  width: 110px;
   padding: 7px;
 }
 #result-image{  
-  width: 105px;
+  width: 110px;
   padding: 7px;
 }
-.container{
-  size: 10%;
-}
+
 .title{
   padding-top: 10%;
   padding-bottom: 5%;
@@ -11778,12 +11776,13 @@ margin-top: 2.5%;
 background-color: #EFEFEF;
 border-radius: 10px;
 padding-bottom: 8%;
-margin-top: 11%;
+margin-top: 13%;
 
 }
 .ad-banner{
 width: 320px;
 margin:0 auto;
+margin-top: 3%;
 }
 
 
