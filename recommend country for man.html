@@ -177,14 +177,15 @@
                     predict_korea();
                 });
                 resultmassage = "한국"
-                examplemassage = "저의 추천 여행지는 한국입니다. 한국의 제주도와 남해 다랭이마을 등 한국여행을 떠나보는 것은 어떨까요?<br>한국에서 가장 닮은 유명인은 바로!!!"
+                examplemassage = "저의 추천 여행지는 <strong>한국</strong>입니다.<br> 한국의 <strong>제주도</strong>, <strong>남해 다랭이마을</strong> 등으로 한국여행을 떠나보는 것은 어떨까요?<br>한국에서 <strong>가장 닮은 유명인</strong>은 바로!!!"
                 
             }
             else if (prediction[0].className == "japan") {
                 init_japan().then(function () {
+                    
                     predict_japan();
                 });
-                resultmassage = "일본(Japan)"
+                resultmassage = "일본"
                 examplemassage = "일본 비행기 티켓을 알아보러 갈까요?.<br>일본에서 가장 닮은 유명인은 바로!!!"
             }
             else if (prediction[0].className == "thailand") {
