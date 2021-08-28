@@ -11712,6 +11712,14 @@ html {
 .home_bottom_banner{
   display: none;
 }
+.file-upload-image{
+  width: 140px;
+  padding: 7px;
+}
+#result-image{  
+  width: 140px;
+  padding: 7px;
+}
 
 
 }
@@ -11733,7 +11741,7 @@ html {
   padding: 7px;
 }
 #result-image{  
-  width: 110px;
+  width: 130px;
   padding: 7px;
 }
 
@@ -11776,7 +11784,7 @@ margin-top: 2.5%;
 background-color: #EFEFEF;
 border-radius: 10px;
 padding-bottom: 8%;
-margin-top: 13%;
+margin-top: 15%;
 
 }
 .ad-banner{
