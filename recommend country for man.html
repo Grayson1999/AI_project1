@@ -56,8 +56,10 @@
 
 
         <div class="file-upload-content">
+            <div>
             <img class="file-upload-image" id="face-image" src="#" alt="your image" />
             <img id="result-image">
+            </div>
 
             <div id="loading">
                 <div class="spinner-border text-secondary" role="status">
@@ -69,6 +71,7 @@
             <p class="result-massage"><strong></strong></p>
             <p class="examplemassage"></p>
             <a href="javascript:gopage()" id="label-container" alt="위 인물을 검색하기"></a>
+            
 
             <div class="restart-page">
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -145,7 +148,7 @@
         // the link to your model provided by Teachable Machine export panel
         const URL = "https://teachablemachine.withgoogle.com/models/op95WYIQL/";
 
-        let model, webcam, labelContainer, maxPredictions;
+        let model, webcam, labelContainer, maxPredictions, google_travel;
 
         // Load the image model and setup the webcam
         async function init() {
@@ -172,7 +175,7 @@
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
 
-            var resultmassage;
+            var resultmassage ;
             if (prediction[0].className == "korea") {
                 init_korea().then(function () {
                     predict_korea();
@@ -221,6 +224,8 @@
 
             $('.result-massage').html(resultmassage);
             $('.examplemassage').html(examplemassage);
+            
+            
             // for (let i = 0; i < maxPredictions; i++) {
             //     const classPrediction =
             //         prediction[i].className + ": " + prediction[i].probability.toFixed(2);

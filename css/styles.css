@@ -11723,6 +11723,9 @@ html {
 #attachment{
   max-width: 30px;
 }
+.background{
+  margin-top: 16%;
+}
 
 
 }
@@ -11787,7 +11790,7 @@ margin-top: 2.5%;
 background-color: #EFEFEF;
 border-radius: 10px;
 padding-bottom: 8%;
-margin-top: 15%;
+margin-top: 12%;
 background-image: url("./background/korea_back.jpg");
 
 }
