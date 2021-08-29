@@ -11729,7 +11729,7 @@ html {
 
 @media screen and (max-width: 400px) {
 html {
-  font-size: 8px;
+  font-size: 9.5px;
 }
 .image-upload-wrap{
   width: 78%;
@@ -11794,17 +11794,19 @@ background-image: url("./background/korea_back.jpg");
 .ad-banner{
 width: 320px;
 margin:0 auto;
-margin-top: 3%;
+margin-top: 8%;
 }
 .sign_how_to_start{
   color: #e92efb;
 }
 #attachment{
-  padding-top: 1.5%;
+  padding-top: 3%;
 }
 #darg-in-text{
   padding-top: 4.5%;
 }
+
+
 
 
 
