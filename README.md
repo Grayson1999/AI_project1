@@ -7,7 +7,7 @@
 ___
 - 각국에서 선호하는 유명인과 나의 얼굴을 인공지능을 통해 비교해 여행지 및 닮은 유명인을 찾아줍니다. 현재 총 6개의 국가(한국, 미국, 영국, 일본, 캐나다, 태국)의 데이터를 활용해 결과를 제공합니다.
 ___
-입력된 이미지는 Teachable machine의 인공지능 모델로 보내진다. 이 후 예상 확률을 기준으로 국가를 출력한다.
+입력된 이미지는 저장된URL주소에 있는 Teachable machine의 인공지능 모델로 보내진다. 이 후 예상 확률을 기준으로 국가를 출력한다.
 ```js
          const URL = "https://teachablemachine.withgoogle.com/models/op95WYIQL/";
 
